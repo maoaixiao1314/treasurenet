@@ -29,7 +29,8 @@ from .utils import (
 # This contract address is provided in genesis
 # as registered token pair. If need to edit this
 # do so in 'osmosis-outpost.jsonnet' file
-WOSMO_ADDRESS = Web3.toChecksumAddress("0x5db67696C3c088DfBf588d3dd849f44266ff0ffa")
+# WOSMO_ADDRESS = Web3.toChecksumAddress("0x5db67696C3c088DfBf588d3dd849f44266ff0ffa")
+WOSMO_ADDRESS = Web3.to_checksum_address("0x5db67696C3c088DfBf588d3dd849f44266ff0ffa")
 
 
 @pytest.fixture(scope="module", params=["treasurenet"])
