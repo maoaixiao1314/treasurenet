@@ -31,7 +31,8 @@ KEYS = {name: account.key for name, account in ACCOUNTS.items()}
 ADDRS = {name: account.address for name, account in ACCOUNTS.items()}
 EVMOS_ADDRESS_PREFIX = "treasurenet"
 DEFAULT_DENOM = "aunit"
-WEVMOS_ADDRESS = Web3.toChecksumAddress("0xcc491f589b45d4a3c679016195b3fb87d7848210")
+# WEVMOS_ADDRESS = Web3.toChecksumAddress("0xcc491f589b45d4a3c679016195b3fb87d7848210")
+WEVMOS_ADDRESS = Web3.to_checksum_address("0xcc491f589b45d4a3c679016195b3fb87d7848210")
 TEST_CONTRACTS = {
     "TestERC20A": "TestERC20A.sol",
     "Greeter": "Greeter.sol",
